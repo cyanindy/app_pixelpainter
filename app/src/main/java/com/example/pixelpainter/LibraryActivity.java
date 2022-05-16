@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class LibraryActivity extends AppCompatActivity {
 
-    ImageButton imgbtn_user_chk;
-    ImageButton imgbtn_library_unchk;
+    ImageButton imgbtn_user_unchk;
+    ImageButton imgbtn_library_chk;
     ImageButton imgbtn_nft_unchk;
     ImageButton imgbtn_camera_unchk;
     ImageButton imgbtn_setting;
@@ -18,29 +18,29 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_library);
 
-        imgbtn_user_chk=findViewById(R.id.imgbtn_user_chk);
-        imgbtn_library_unchk=findViewById(R.id.imgbtn_library_unchk);
+        imgbtn_user_unchk=findViewById(R.id.imgbtn_user_unchk);
+        imgbtn_library_chk=findViewById(R.id.imgbtn_library_chk);
         imgbtn_nft_unchk=findViewById(R.id.imgbtn_nft_unchk);
         imgbtn_camera_unchk=findViewById(R.id.imgbtn_camera_unchk);
         imgbtn_setting=findViewById(R.id.imgbtn_setting);
 
         // --------------- 화면전환 --------------------
         //내 도안 클릭
-        imgbtn_user_chk.setOnClickListener(new View.OnClickListener() {
+        imgbtn_user_unchk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(LibraryActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
 
         //라이브러리 클릭
-        imgbtn_library_unchk.setOnClickListener(new View.OnClickListener() {
+        imgbtn_library_chk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LibraryActivity.class);
+                Intent intent = new Intent(LibraryActivity.this, LibraryActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         imgbtn_nft_unchk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, NftActivity.class);
+                Intent intent = new Intent(LibraryActivity.this, NftActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         imgbtn_camera_unchk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+                Intent intent = new Intent(LibraryActivity.this, CameraActivity.class);
                 startActivity(intent);
             }
         });
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         imgbtn_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+                Intent intent = new Intent(LibraryActivity.this, SettingActivity.class);
                 startActivity(intent);
             }
         });

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".NftActivity">
 
     <TextView
         android:id="@+id/textView5"
@@ -56,7 +56,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내 도안 목록"
+        android:text="NFT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.464" />
 
     <ImageButton
-        android:id="@+id/imgbtn_nft_unchk"
+        android:id="@+id/imgbtn_nft_chk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.907"
-        app:srcCompat="@drawable/nft_unchecked" />
+        app:srcCompat="@drawable/nft_checked" />
 
     <ImageButton
         android:id="@+id/imgbtn_camera_unchk"
@@ -89,7 +89,7 @@
         app:srcCompat="@drawable/camera_unchecked" />
 
     <ImageButton
-        android:id="@+id/imgbtn_user_chk"
+        android:id="@+id/imgbtn_user_unchk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,7 +98,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.907"
-        app:srcCompat="@drawable/user_checked" />
+        app:srcCompat="@drawable/user_unchecked" />
 
     <ImageButton
         android:id="@+id/imgbtn_library_unchk"
